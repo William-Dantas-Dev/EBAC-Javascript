@@ -1,6 +1,10 @@
 const {somaMultiplos1, somaMultiplos2} = require('./somaMultiplos');
 
 describe("Testes da função somaMultiplos", () => {
+
+  // ------------------------------
+  // Testes da versão ITERATIVA
+  // ------------------------------
   test("Retorna 156361 quando usa o valor padrão (999)", () => {
     expect(somaMultiplos1()).toBe(156361);
   });
@@ -14,6 +18,10 @@ describe("Testes da função somaMultiplos", () => {
     expect(somaMultiplos1(10)).toBe(22);
   });
 
+
+  // ------------------------------
+  // Testes da versão RECURSIVA
+  // ------------------------------
   test("Retorna 156361 quando usa o valor padrão (999)", () => {
     expect(somaMultiplos2()).toBe(156361);
   });
