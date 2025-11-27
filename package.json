@@ -1,0 +1,24 @@
+{
+  "name": "ebac---javascript-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indiceMaiorMenor.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William-Dantas-Dev/EBAC-Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/William-Dantas-Dev/EBAC-Javascript/issues"
+  },
+  "homepage": "https://github.com/William-Dantas-Dev/EBAC-Javascript#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

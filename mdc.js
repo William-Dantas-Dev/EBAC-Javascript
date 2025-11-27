@@ -1,4 +1,4 @@
-function mdc(a, b){
+function mdc1(a, b){
     while (b !== 0){
         const temp = b;
         b = a % b;
@@ -8,13 +8,11 @@ function mdc(a, b){
     return a;
 }
 
-console.log(mdc(48, 18));
-// Resultado esperado: { 6 }
 
-function mdc(a, b) {
+function mdc2(a, b) {
   if (b === 0) return a;
-  return mdc(b, a % b);
+  return mdc2(b, a % b);
 }
 
-console.log(mdc(48, 18));
-// Resultado esperado: { 6 }
+
+module.exports = { mdc1, mdc2 };

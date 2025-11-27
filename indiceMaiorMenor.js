@@ -1,4 +1,4 @@
-function indicesMaiorMenor(array) {
+function indicesMaiorMenor1(array) {
   let indiceMaior = 0;
   let indiceMenor = 0;
 
@@ -17,10 +17,7 @@ function indicesMaiorMenor(array) {
   };
 }
 
-console.log(indicesMaiorMenor([10, 3, 25, 7, 1, 20]));
-// Resultado esperado: { indiceMaior: 2, indiceMenor: 4 }
-
-function indicesMaiorMenor(array, index = 0, maior = 0, menor = 0) {
+function indicesMaiorMenor2(array, index = 0, maior = 0, menor = 0) {
   if (index === array.length) {
     return { indiceMaior: maior, indiceMenor: menor };
   }
@@ -33,8 +30,7 @@ function indicesMaiorMenor(array, index = 0, maior = 0, menor = 0) {
     menor = index;
   }
 
-  return indicesMaiorMenor(array, index + 1, maior, menor);
+  return indicesMaiorMenor2(array, index + 1, maior, menor);
 }
 
-console.log(indicesMaiorMenor([10, 3, 25, 7, 1, 20]));
-// Resultado esperado: { indiceMaior: 2, indiceMenor: 4 }
+module.exports = { indicesMaiorMenor1, indicesMaiorMenor2 };
